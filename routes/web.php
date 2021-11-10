@@ -18,7 +18,7 @@ use App\Http\Controllers\OjisanController;
     return view('welcome');
 });*/
 Route::get('/folders/{id}/tasks', [TaskController::class, 'index'], ['name' => 'tasks.index']);
-Route::get('/folders/{id}/tasks/plus', [TaskController::class, 'plus'], ['name' => 'tasks.plus']);
+//Route::get('/folders/{id}/tasks/plus', [TaskController::class, 'plus'], ['name' => 'tasks.plus']);
 
 Route::get('/folders/{id}/oji', [OjisanController::class, 'index'], ['name' => 'ojisans.index']);
 Route::get('/folders/{id}/oji/plus', [OjisanController::class, 'plus'], ['name' => 'ojisans.plus']);
